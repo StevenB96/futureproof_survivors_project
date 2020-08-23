@@ -40,10 +40,16 @@ Users will have the ability to change their name, password and contact details.
 
 ## On boarding to the project:
 
-This project is effectively a fork of another project written in PHP. For that reason this project will also be primarily written in PHP. However, whereas the original project was written entirely in vanilla, to progress further with this one we will leverage the Laravel framework. Beyond that the specification is quite open. Those looking to install PHP and Laravel can find instructions at the following URLs:
+This project is effectively a fork of another project written in PHP. For that reason this project will also be primarily written in PHP. However, whereas the original project was written entirely in vanilla, to progress further with this one we will leverage the Laravel framework. Beyond that the specification is quite open. 
+
+Those looking to install PHP and Laravel can find instructions at the following URLs:
 
  - [https://www.php.net/](https://www.php.net/)
 
  - [https://laravel.com/](https://laravel.com/)
 
-**Tech stack:**
+Those looking for courses in PHP or Laravel might like the resources at the following URLs:
+
+ - [https://www.youtube.com/watch?v=oIQnTTADTa4](https://www.youtube.com/watch?v=oIQnTTADTa4)
+
+ - [https://laracasts.com/series/laravel-from-scratch-2018/episodes/1](https://laracasts.com/series/laravel-from-scratch-2018/episodes/1)
