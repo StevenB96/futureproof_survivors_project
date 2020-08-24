@@ -28,6 +28,14 @@
     <div class="rootFooterLogoDiv">
         <img src='png\auxins.png' class="rootFooterImage">
     </div>
+    <div class="rootFooterBusinessEnquiries">
+        <p style="text-align:center;">Contact information:</p>
+        <table>
+            <tr><td style="padding-right:10px; vertical-align:top;">Email address:</td><td>fakeemail@fakemail.com</td></tr>
+            <tr><td style="padding-right:10px; vertical-align:top;">Telephone:</td><td>+44 1632 960964</td></tr>
+            <tr><td style="padding-right:10px; vertical-align:top;">Mail address:</td><td>61  Fox Road<br>Framingham Pigot<br>NORWICH<br>NR14 7PZ</td></tr>
+        </table>
+    </div>
     <div class="rootFooterOpeningHoursDiv">
         <?php
         use App\Libraries\StoreHours;
@@ -43,7 +51,7 @@
         // If closed for the day, leave blank (ex. sunday)
         // If open multiple times in one day, enter time ranges separated by a comma
         $hours = array(
-            'mon' => array('09:00-21:50'),
+            'mon' => array('09:00-17:00'),
             'tue' => array('09:00-17:00'),
             'wed' => array('09:00-17:00'),
             'thu' => array('09:00-17:00'), // Open late
@@ -73,9 +81,9 @@
         
         // Display open / closed message
         if($store_hours->is_open()) {
-            echo '<p style="text-align:center;">Yes, we\'re open!<br>Today\'s hours are:&emsp;' . $store_hours->hours_today() . ".</p>";
+            echo '<p style="text-align:center;">Yes, we\'re open!<br>Our normal office hours are:</p>';
         } else {
-            echo '<p style="text-align:center;">Sorry, we\'re closed.<br>Our opening hours are:</p>';
+            echo '<p style="text-align:center;">Sorry, we\'re closed.<br>Our normal office hours are:</p>';
         }
 
         // Display full list of open hours (for a week without exceptions)
