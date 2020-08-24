@@ -5,19 +5,28 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
     <link href='#' rel='stylesheet' type = '#'><!--Fonts-->
-    <link href='../bootstrap-3.4.1-dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'><!--CSS frameworks-->
-    <link href = '#' rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
+    <link href="bootstrap-3.4.1-dist\css\bootstrap.min.css" rel='stylesheet' type='text/css'><!--CSS frameworks-->
+    <link href = "{{ asset('css\root.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
     <script
-    src='#'
-    integrity='#'
-    crossorigin='#'
+    src="jquery-3.5.1.min.js"
     type='application/javascript'>
     </script><!--JavasScript frameworks-->
-    <script  src='#'
+    <script src="js/root.js"
     type='application/javascript'>
     </script><!--Custom JavaScript-->
 </head>
-<body>
-    <h1 class="alert alert-primary">Hello World!</h1>
-</body><!--Everything written on the page-->
+
+<body class="rootBody">
+    <header class="rootHeader">
+        <img src='png\banner.png' class="rootHeaderImage">
+    </header>
+    <main class="rootMain">
+    </main>
+    <footer class="rootFooter">
+        <img src='jpg\annie_spratt_paper.jpg' class="rootFooterImage">
+    </footer>
+    <div class="rootFooterDiv">
+        <img src='png\auxins.png' class="rootFooterImage">
+    </div>
+</body>
 </html>
