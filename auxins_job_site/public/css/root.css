@@ -24,7 +24,7 @@
   grid-row-end: 4;
 }
 
-.rootFooterDiv {
+.rootFooterLogoDiv {
   grid-column-start: 1; 
   grid-column-end: 2; 
   grid-row-start: 3; 
@@ -32,6 +32,19 @@
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+.rootFooterOpeningHoursDiv {
+  grid-column-start: 3; 
+  grid-column-end: 4; 
+  grid-row-start: 3; 
+  grid-row-end: 4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size:10px; */
 }
 
 .rootFooterImage {
