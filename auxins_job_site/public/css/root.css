@@ -87,7 +87,6 @@ p {
 }
 
 table td, table th {
-  /* border: 1.5px solid rgb(61, 61, 61); */
   padding: 0px 10px ;
   white-space: nowrap;
 }
