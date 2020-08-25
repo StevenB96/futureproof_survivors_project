@@ -43,8 +43,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* padding-top: 20px; */
+  justify-content: flex-start;
+  padding-top:5px;
 }
 
 .rootFooterOpeningHoursDiv {
@@ -56,8 +56,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* padding-top: 20px; */
+  justify-content: flex-start;
+  padding-top:5px;
+}
+
+.tableDiv{
+
 }
 
 .rootFooterImage {
@@ -70,4 +74,26 @@
   grid-column-end: 4; 
   grid-row-start: 2; 
   grid-row-end: 3; 
+}
+
+td {
+  vertical-align:top;
+  margin: 0em;
+}
+
+p {
+  text-align: center;
+  margin: 0em;
+}
+
+table td, table th {
+  /* border: 1.5px solid rgb(61, 61, 61); */
+  padding: 0px 10px ;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .rootBody {
+    width: 100%;
+  }
 }

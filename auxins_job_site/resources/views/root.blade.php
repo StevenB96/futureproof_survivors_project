@@ -28,15 +28,15 @@
     <div class="rootFooterLogoDiv">
         <img src='png\auxins.png' class="rootFooterImage">
     </div>
-    <div class="rootFooterBusinessEnquiries">
-        <p style="text-align:center;">Contact information:</p>
+    <div class="rootFooterBusinessEnquiries tableDiv">
+        <p style="text-align:center; font-size: 1vw;">Contact information:</p>
         <table>
-            <tr><td style="padding-right:10px; vertical-align:top;">Email address:</td><td>fakeemail@fakemail.com</td></tr>
-            <tr><td style="padding-right:10px; vertical-align:top;">Telephone:</td><td>+44 1632 960964</td></tr>
-            <tr><td style="padding-right:10px; vertical-align:top;">Mail address:</td><td>61  Fox Road<br>Framingham Pigot<br>NORWICH<br>NR14 7PZ</td></tr>
+            <tr><td style="padding-right:10px;">Email address</td><td>fakeemail@fakemail.com</td></tr>
+            <tr><td style="padding-right:10px;">Telephone</td><td>+44 1632 960964</td></tr>
+            <tr><td style="padding-right:10px;">Mail address</td><td>61  Fox Road<br>Framingham Pigot<br>NORWICH<br>NR14 7PZ</td></tr>
         </table>
     </div>
-    <div class="rootFooterOpeningHoursDiv">
+    <div class="rootFooterOpeningHoursDiv tableDiv">
         <?php
         use App\Libraries\StoreHours;
         // REQUIRED
@@ -81,16 +81,16 @@
         
         // Display open / closed message
         if($store_hours->is_open()) {
-            echo '<p style="text-align:center;">Yes, we\'re open!<br>Our normal office hours are:</p>';
+            echo '<p style="color: green;">We are open!</p><p>Normal office hours:</p>';
         } else {
-            echo '<p style="text-align:center;">Sorry, we\'re closed.<br>Our normal office hours are:</p>';
+            echo '<p style="color: red;">We are closed.</p><p>Normal office hours:</p>';
         }
 
         // Display full list of open hours (for a week without exceptions)
         echo '<table>';
         foreach ($store_hours->hours_this_week() as $days => $hours) {
             echo '<tr>';
-            echo '<td style="padding-right:10px;">' . $days . ':</td>';
+            echo '<td>' . $days . '</td>';
             echo '<td>' . $hours . '</td>';
             echo '</tr>';
         }
