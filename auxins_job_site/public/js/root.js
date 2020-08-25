@@ -12,7 +12,7 @@ $(document).ready(function() {
     'border-spacing': ($(".rootHeader").width()/446.4 + 'px')
   });
   $("table td, table th").css({
-    'padding': ('0px ' + $(".rootHeader").width()/(89.28*2) + 'px'),
+    'padding': ('0px ' + $(".rootHeader").width()/178.56 + 'px'),
   });
 });
 $(window).on('resize', function(){
@@ -29,6 +29,6 @@ $(window).on('resize', function(){
     'border-spacing': ($("#rootHeader").width()/446.4 + 'px')
   });
   $("table td, table th").css({
-    'padding': ('0px ' + $("#rootHeader").width()/(89.28*2) + 'px'),
+    'padding': ('0px ' + $("#rootHeader").width()/178.56 + 'px'),
   });
 });
