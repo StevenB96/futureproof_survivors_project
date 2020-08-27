@@ -5,16 +5,16 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
     <link href='#' rel='stylesheet' type = '#'><!--Fonts-->
-    <link href="{{ asset('bootstrap-3.4.1-dist\css\bootstrap.min.css') }}" rel='stylesheet' type='text/css'><!--CSS frameworks-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'><!--CSS frameworks{{ asset('bootstrap-3.4.1-dist\css\bootstrap.min.css') }}-->
     <link href = "{{ asset('css\root.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
     <script
     src="{{ asset('jquery-3.5.1.min.js') }}"
     type='application/javascript'>
     </script>
     <script
-    src="{{ asset('bootstrap-3.4.1-dist\js\bootstrap.min.js') }}"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     type='application/javascript'>
-    </script><!--JavasScript frameworks-->
+    </script><!--JavasScript frameworks{{ asset('bootstrap-3.4.1-dist\js\bootstrap.min.js') }}-->
     <script src="js\root.js"
     type='application/javascript'>
     </script><!--Custom JavaScript-->
