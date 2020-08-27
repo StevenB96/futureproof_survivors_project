@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('root');
+Route::get('/register', function () {
+    return view('register');
 });
 
 Route::get('/about', function () {
