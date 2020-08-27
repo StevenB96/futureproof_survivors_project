@@ -58,7 +58,7 @@
 }
 
 #rootMain {
-  height: 30vh;
+  /* height: 30vh; */
   grid-column-start: 2; 
   grid-column-end: 3; 
   grid-row-start: 2; 
@@ -70,7 +70,7 @@
   margin: 0em;
 }
 
-table td, table th {
+div table td, div table th {
   padding: 0px 10px ;
   white-space: nowrap;
   vertical-align:top;
