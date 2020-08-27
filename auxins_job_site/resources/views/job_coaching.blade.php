@@ -1,10 +1,13 @@
 @extends('root')
 
 @section('content')
-    <nav class="navbar navbar-light bg-light" style="padding-top: 0px; padding-bottom: 0px;">
-        <a class="navbar-brand text-dark font-weight-bold">Job Coaching</a>
-        <a href="http://127.0.0.1:8000/about" class="navbar-item text-dark">About</a>
-        <a href="http://127.0.0.1:8000/job_coaching" class="navbar-item text-dark">Digital CV Builder</a>
+    <nav class="navbar navbar-light bg-light pageNav" style="padding: 0px; text-align:center;">
+        <h5>Job Coaching</h5>
+
+        <button href="http://127.0.0.1:8000/about" class="btn btn-light">About</button>
+
+        <button href="http://127.0.0.1:8000/job_coaching" class="btn btn-light">Digital CV Builder</button>
+
         <div class="btn-group">
             <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Settings

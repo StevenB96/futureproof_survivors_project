@@ -86,3 +86,16 @@ div table td, div table th {
     grid-template-columns: auto 100% auto;
   }
 }
+
+.pageNav {
+    display: grid; 
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+h5 {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
