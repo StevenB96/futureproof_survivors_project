@@ -4,13 +4,18 @@
   width: 100%;
   grid-template-columns: auto 62% auto;
   grid-template-rows: auto auto auto;
+  box-sizing: content-box;
 }
 
 #rootHeader {
   grid-column-start: 2; 
   grid-column-end: 3; 
   grid-row-start: 1; 
-  grid-row-end: 2; 
+  grid-row-end: 2;
+  border-width: 0px 3px 3px 3px;
+  border-color: black;
+  border-style: solid;
+  box-sizing: content-box;
 }
 
 #rootFooter {
@@ -22,7 +27,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   background-image: url('../jpg/annie_spratt_paper.jpg');
-  background-size: contain;
+  background-size: cover;
+  border: 2px black solid;
+  box-sizing: content-box;
 }
 
 #rootFooterLogo {
@@ -58,11 +65,11 @@
 }
 
 #rootMain {
-  /* height: 30vh; */
   grid-column-start: 2; 
   grid-column-end: 3; 
   grid-row-start: 2; 
   grid-row-end: 3; 
+  box-sizing: content-box;
 }
 
 .rootP {
@@ -85,6 +92,12 @@ div table td, div table th {
   .rootBody {
     grid-template-columns: auto 100% auto;
   }
+  #rootHeader {
+    border-width: 0px 0px 3px 0px;
+  }
+  #rootFooter {
+    border-width: 3px 0px 3px 0px;
+  }
 }
 
 .pageNav {
@@ -94,8 +107,22 @@ div table td, div table th {
     grid-template-rows: auto;
 }
 
-h5 {
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
+.pageA:focus, .pageA:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.pageButton:focus, .pageButton:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.pageA, .pageStrong, .pageButton {
+  white-space: nowrap;
+  border-radius: 0px;
+}
+
+.dropdown-menu-right{
+  top: 35px;
+  border-radius: 0px;
 }
