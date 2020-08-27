@@ -21,6 +21,7 @@
         <img class="rootImg" src='png\banner.png'>
     </header>
     <main id="rootMain">
+        @yield('content')
     </main>
     <footer id="rootFooter">
         <div id="rootFooterLogo">

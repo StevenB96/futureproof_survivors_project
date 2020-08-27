@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('root');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/dcv_builder', function () {
+    return view('dcv_builder');
+});
+
+Route::get('/job_coaching', function () {
+    return view('job_coaching');
+});
