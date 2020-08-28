@@ -25,4 +25,6 @@
             </div>
         </div>
     </nav>
+    <main class="registerBody">
+    </main>
 @endsection

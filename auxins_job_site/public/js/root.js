@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Root Stuff
   $("#rootFooter").css({
     'height': ($("#rootHeader").height() + 'px')
   });
@@ -14,6 +15,8 @@ $(document).ready(function() {
   $("div table td, div table th").css({
     'padding': ('0px ' + $("#rootHeader").width()/178.56 + 'px')
   });
+
+  // Page Stuff
   $(".dropdown-menu-right > a").css({
     'min-width': ($(".btn-group").width()-1 + 'px')
   });
@@ -26,8 +29,16 @@ $(document).ready(function() {
   $(".pageA, .pageStrong, .pageButton").css({
     'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
+
+  //Register Stuff
+  originalHeight = $(document).height()
+  originalWidth = $("#rootHeader").width()
+  $(".registerBody").css({
+    'height': (((2**0.5*originalHeight)-originalWidth) + 'px')
+  });   
 });
 $(window).on('resize', function(){
+    // Root Stuff
   $("#rootFooter").css({
     'height': ($("#rootHeader").height() + 'px')
   });
@@ -43,6 +54,8 @@ $(window).on('resize', function(){
   $("div table td, div table th").css({
     'padding': ('0px ' + $("#rootHeader").width()/178.56 + 'px')
   });
+
+  // Page Stuff
   $(".dropdown-menu-right > a").css({
     'min-width': ($(".btn-group").width()-1 + 'px')
   });
@@ -58,4 +71,9 @@ $(window).on('resize', function(){
   $(".pageA, .pageStrong, .pageButton").css({
     'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
+
+  //Register Stuff
+  $(".registerBody").css({
+    'height': (((2**0.5*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
+  });    
 });
