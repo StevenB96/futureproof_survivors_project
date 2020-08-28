@@ -14,7 +14,7 @@
 
         <div class="btn-group">
             <button type="button" class="btn bg-light dropdown-toggle pageButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Settings
+            More
             </button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item bg-light pageButton" href="#">Account</a>

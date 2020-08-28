@@ -143,10 +143,6 @@ div table td, div table th {
 }
 
 /* Register Stuff */
-/* .registerBody {
-
-} */
-
 #registrationForm {
   position: fixed;
   top: 20px;
@@ -155,7 +151,7 @@ div table td, div table th {
   background-color: cornflowerblue
 }
 
-body *:not(.topLayer) {
-  filter: blur(1px);
+header, main, footer {
+  filter: blur(3px);
   pointer-events: none;
 }
