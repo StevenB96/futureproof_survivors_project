@@ -37,7 +37,11 @@ $(document).ready(function() {
   $(".indexMain").css({
     'height': (((Math.sqrt(2)*originalWidth)-originalHeight) + 'px')
   });
-  $("#registrationForm, #loginForm").css({
+  $("#registrationForm").css({
+    'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
+    'width': ($("#rootHeader").width()*0.62 + 'px')
+  })
+  $("#loginForm").css({
     'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })
@@ -78,7 +82,11 @@ $(window).on('resize', function(){
   $(".indexMain").css({
     'height': (((Math.sqrt(2)*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
   });
-  $("#registrationForm, #loginForm").css({
+  $("#registrationForm").css({
+    'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
+    'width': ($("#rootHeader").width()*0.62 + 'px')
+  })
+  $("#loginForm").css({
     'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })

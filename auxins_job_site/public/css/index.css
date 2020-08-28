@@ -6,7 +6,6 @@
   grid-template-columns: auto 62% auto;
   grid-template-rows: auto auto auto;
   box-sizing: content-box;
-  overflow: hidden;
 }
 
 #rootHeader {
@@ -183,4 +182,11 @@ header, main, footer {
 .has-error .form-control:focus{
   box-shadow: none; 
   -webkit-box-shadow: none;
+}
+
+.indexText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
 }
