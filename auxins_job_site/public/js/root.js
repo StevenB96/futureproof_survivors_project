@@ -18,15 +18,15 @@ $(document).ready(function() {
 
   // Page Stuff
   $(".dropdown-menu-right > a").css({
-    'min-width': ($(".btn-group").width()-1 + 'px')
+    'min-width': ($(".btn-group").width() + 'px')
   });
-  $(".pageNav").css({
+  $(".primmaryNav").css({
     'height': ($("#rootHeader").height()*0.3844 + 'px')
   });
   $(".dropdown-menu-right").css({
-    'top': ($("#rootHeader").width()/10 + 'px')
+    'top': ($("#rootHeader").width()/10.5 + 'px')
   });
-  $(".pageA, .pageStrong, .pageButton").css({
+  $(".navA, .navStrong, .navButton, .indexText").css({
     'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
   $(".indexMain").css({
     'height': (((Math.sqrt(2)*originalWidth)-originalHeight) + 'px')
   });
-  $("#registrationForm").css({
+  $("#registrationForm, #loginForm").css({
     'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })
@@ -62,18 +62,15 @@ $(window).on('resize', function(){
 
   // Page Stuff
   $(".dropdown-menu-right > a").css({
-    'min-width': ($(".btn-group").width()-1 + 'px')
+    'min-width': ($(".btn-group").width() + 'px')
   });
-  $(".pageNav").css({
+  $(".primmaryNav").css({
     'height': ($("#rootHeader").height()*0.3844 + 'px')
   });
   $(".dropdown-menu-right").css({
-    'top': ($("#rootHeader").width()/10 + 'px')
+    'top': ($("#rootHeader").width()/10.5 + 'px')
   });
-  $(".pageA, .pageStrong, .pageButton").css({
-    'font-size': ($("#rootHeader").width()/37.2 + 'px')
-  });
-  $(".pageA, .pageStrong, .pageButton").css({
+  $(".navA, .navStrong, .navButton, .indexText").css({
     'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
 
@@ -81,7 +78,7 @@ $(window).on('resize', function(){
   $(".indexMain").css({
     'height': (((Math.sqrt(2)*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
   });
-  $("#registrationForm").css({
+  $("#registrationForm, #loginForm").css({
     'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })
