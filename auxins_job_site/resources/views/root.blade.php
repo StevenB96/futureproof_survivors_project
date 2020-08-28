@@ -3,7 +3,7 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Document</title>
+    <title>@yield('title')</title>
     <link href='#' rel='stylesheet' type = '#'><!--Fonts-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'><!--CSS frameworks{{ asset('bootstrap-3.4.1-dist\css\bootstrap.min.css') }}-->
     <link href = "{{ asset('css\root.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->

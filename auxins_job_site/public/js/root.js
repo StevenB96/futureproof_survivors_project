@@ -11,8 +11,20 @@ $(document).ready(function() {
   $("table").css({
     'border-spacing': ($("#rootHeader").width()/446.4 + 'px')
   });
-  $("table td, table th").css({
+  $("div table td, div table th").css({
     'padding': ('0px ' + $("#rootHeader").width()/178.56 + 'px')
+  });
+  $(".dropdown-menu-right > a").css({
+    'min-width': ($(".btn-group").width()-1 + 'px')
+  });
+  $(".pageNav").css({
+    'height': ($("#rootHeader").height()*0.3844 + 'px')
+  });
+  $(".dropdown-menu-right").css({
+    'top': ($("#rootHeader").width()/10 + 'px')
+  });
+  $(".pageA, .pageStrong, .pageButton").css({
+    'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
 });
 $(window).on('resize', function(){
@@ -28,7 +40,22 @@ $(window).on('resize', function(){
   $("table").css({
     'border-spacing': ($("#rootHeader").width()/446.4 + 'px')
   });
-  $("table td, table th").css({
+  $("div table td, div table th").css({
     'padding': ('0px ' + $("#rootHeader").width()/178.56 + 'px')
+  });
+  $(".dropdown-menu-right > a").css({
+    'min-width': ($(".btn-group").width()-1 + 'px')
+  });
+  $(".pageNav").css({
+    'height': ($("#rootHeader").height()*0.3844 + 'px')
+  });
+  $(".dropdown-menu-right").css({
+    'top': ($("#rootHeader").width()/10 + 'px')
+  });
+  $(".pageA, .pageStrong, .pageButton").css({
+    'font-size': ($("#rootHeader").width()/37.2 + 'px')
+  });
+  $(".pageA, .pageStrong, .pageButton").css({
+    'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
 });
