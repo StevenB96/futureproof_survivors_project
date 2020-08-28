@@ -110,8 +110,7 @@
             ?>
         </div>
     </footer>
+    @yield('registrationForm')
 </body>
-
-
 
 </html>

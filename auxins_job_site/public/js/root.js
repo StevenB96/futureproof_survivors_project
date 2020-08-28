@@ -33,8 +33,9 @@ $(document).ready(function() {
   //Register Stuff
   originalHeight = $(document).height()
   originalWidth = $("#rootHeader").width()
+  console.log((((2**0.5)*originalWidth)-originalHeight))
   $(".registerBody").css({
-    'height': (((2**0.5*originalHeight)-originalWidth) + 'px')
+    'height': (((Math.sqrt(2)*originalWidth)-originalHeight) + 'px')
   });   
 });
 $(window).on('resize', function(){
@@ -74,6 +75,6 @@ $(window).on('resize', function(){
 
   //Register Stuff
   $(".registerBody").css({
-    'height': (((2**0.5*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
+    'height': (((Math.sqrt(2)*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
   });    
 });

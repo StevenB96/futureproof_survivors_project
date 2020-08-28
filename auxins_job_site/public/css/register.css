@@ -141,3 +141,21 @@ div table td, div table th {
   margin: 0px !important;
   padding: 0px !important;
 }
+
+/* Register Stuff */
+/* .registerBody {
+
+} */
+
+#registrationForm {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 1;
+  background-color: cornflowerblue
+}
+
+body *:not(.topLayer) {
+  filter: blur(1px);
+  pointer-events: none;
+}
