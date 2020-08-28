@@ -1,29 +1,17 @@
 @extends('templates/index')
 
 @section('title')
-    Register
+    Login
 @endsection
 
 @section('form')
-    <form class="topLayer bg-light" id="registrationForm">
-        <div class="form-group">
-            <label for="email">Forename:</label>
-            <input type="email" class="form-control" id="email">
-        </div>
-        <div class="form-group">
-            <label for="email">Surname:</label>
-            <input type="email" class="form-control" id="email">
-        </div>    
+    <form class="topLayer bg-light" id="registrationForm">  
         <div class="form-group">
             <label for="email">Email address:</label>
             <input type="email" class="form-control" id="email">
         </div>
         <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Re-type password:</label>
             <input type="password" class="form-control" id="pwd">
         </div>
         <div class="checkbox">

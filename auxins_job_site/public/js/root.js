@@ -30,13 +30,16 @@ $(document).ready(function() {
     'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
 
-  //Register Stuff
+  //Index Stuff
   originalHeight = $(document).height()
   originalWidth = $("#rootHeader").width()
   console.log((((2**0.5)*originalWidth)-originalHeight))
-  $(".registerBody").css({
+  $(".indexMain").css({
     'height': (((Math.sqrt(2)*originalWidth)-originalHeight) + 'px')
-  });   
+  });
+  $("#registrationForm").css({
+    'left': "calc(" + ($(window).width()/2 + 'px') + " - 31%" + ")"
+  })
 });
 $(window).on('resize', function(){
     // Root Stuff
@@ -73,8 +76,11 @@ $(window).on('resize', function(){
     'font-size': ($("#rootHeader").width()/37.2 + 'px')
   });
 
-  //Register Stuff
-  $(".registerBody").css({
+  //Index Stuff
+  $(".indexMain").css({
     'height': (((Math.sqrt(2)*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
-  });    
+  });
+  $("#registrationForm").css({
+    'left': "calc(" + ($(window).width()/2 + 'px') + " - 31%" + ")"
+  })
 });

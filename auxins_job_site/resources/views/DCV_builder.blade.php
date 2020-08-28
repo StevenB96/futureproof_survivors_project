@@ -1,4 +1,4 @@
-@extends('root')
+@extends('templates/root')
 
 @section('title')
     Digital CV Builder
