@@ -5,7 +5,7 @@
 @endsection
 
 @section('form')
-    <form class="topLayer bg-light indexText text-dark" id="registrationForm">
+    <form class="topLayer bg-light indexText text-dark" id="registrationForm" action="/action_page.php">
         <div style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2; text-align: center;">
             <strong class="navStrong indexText">Register</strong><a class="nav-link" href="http://127.0.0.1:8000/login">Already have an account? Click here to login.</a>
         </div>
@@ -27,11 +27,11 @@
         </div>
         <div class="form-group" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 5; grid-row-end: 6;">
             <label for="pwd">Re-type password:</label>
-            <input type="password" class="form-control" id="password" name="password_confirm" required>
+            <input type="password" class="form-control" id="password_confirm" name="password_confirm" required>
         </div>
         <div class="checkbox" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 6; grid-row-end: 7; text-align: center;">
             <label>Remember me <input type="checkbox" name="remember_me"></label required>
         </div>
-        <button type="submit" class="btn btn-secondary indexText" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 6; grid-row-end: 7;">Submit</button>
+        <button type="submit" id="registerSubmit" class="btn btn-secondary indexText" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 6; grid-row-end: 7;">Submit</button>
     </form>
 @endsection
