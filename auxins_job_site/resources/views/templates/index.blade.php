@@ -6,7 +6,8 @@
     <title>@yield('title')</title>
     <link href='#' rel='stylesheet' type = '#'><!--Fonts-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'><!--CSS frameworks{{ asset('bootstrap-3.4.1-dist\css\bootstrap.min.css') }}-->
-    <link href = "{{ asset('css\index.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
+    <link href = "{{ asset('css\index.css') }}" rel = 'stylesheet' type = 'text/css'/>
+    <link href = "{{ asset('css\root.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
     <script
     src="{{ asset('jquery-3.5.1.min.js') }}"
     type='application/javascript'>
@@ -16,6 +17,9 @@
     type='application/javascript'>
     </script><!--JavasScript frameworks{{ asset('bootstrap-3.4.1-dist\js\bootstrap.min.js') }}-->
     <script src="js\root.js"
+    type='application/javascript'>
+    </script>
+    <script src="js\index.js"
     type='application/javascript'>
     </script><!--Custom JavaScript-->
 </head>
