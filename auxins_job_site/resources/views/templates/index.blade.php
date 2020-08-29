@@ -29,7 +29,7 @@
         <img class="rootImg" src='png\banner.png'>
     </header>
     <main id="rootMain">
-        <nav class="navbar navbar-light bg-light pageNav">
+        <nav class="navbar navbar-light bg-light primmaryNav">
             <strong class="pageStrong"><u>About</u></strong>
 
             <a href="http://127.0.0.1:8000/about" class="btn bg-light pageA pageButton">Digital CV Builder</a>
