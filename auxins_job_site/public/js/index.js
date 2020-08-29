@@ -17,18 +17,21 @@ $(document).ready(function() {
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })
   // Display custom validity notices.
-  $("#registerSubmit").click(function(event) {
+  $("#registrationForm").submit(function(event) {
     event.preventDefault();
-    if (($("#password_confirm").val() === "") && ($("#password").val() !== "")) {
-      document.getElementById("password_confirm").setCustomValidity("Please fill out this field.");
-      document.getElementById("password_confirm").reportValidity()
-    } else if ($("#password_confirm").val() !== $("#password").val()) {
+    console.log(document.getElementById("password").value);
+    // Ensure quality of passwords. Haaaaaaaa 1aaaaaaaa 1Haaaaaaa
+    if ((/[A-Z]/.test(document.getElementById("password").value) && /[0-9]/.test(document.getElementById("password").value) && (document.getElementById("password").value.length > 8)) === false) {
+      document.getElementById("password").setCustomValidity("Passwords must contain a minimum of: eight characters, one digit and one capital letter.");
+      document.getElementById("password").reportValidity();      
+    // Ensure passwords match.
+    } else if (document.getElementById("password_confirm").value !== document.getElementById("password").value) {
       document.getElementById("password_confirm").setCustomValidity("Please ensure your passwords match.");
       document.getElementById("password_confirm").reportValidity();
     } else {
       document.getElementById("registrationForm").submit();
     }
-  })
+  });
 });
 
 $(window).on('resize', function(){
