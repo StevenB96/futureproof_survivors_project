@@ -23,11 +23,11 @@
         </div>
         <div class="form-group" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 5; grid-row-end: 6;">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
+            <input type="password" class="form-control" id="password" name="password" oninput="setCustomValidity('')" required>
         </div>
         <div class="form-group" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 5; grid-row-end: 6;">
             <label for="pwd">Re-type password:</label>
-            <input type="password" class="form-control" id="password_confirm" name="password_confirm" required>
+            <input type="password" class="form-control" id="password_confirm" name="password_confirm" oninput="setCustomValidity('')" required>
         </div>
         <div class="checkbox" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 6; grid-row-end: 7; text-align: center;">
             <label>Remember me <input type="checkbox" name="remember_me"></label required>

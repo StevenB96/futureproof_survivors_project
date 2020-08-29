@@ -19,11 +19,11 @@ $(document).ready(function() {
   // Display custom validity notices.
   $("#registrationForm").submit(function(event) {
     event.preventDefault();
-    console.log(document.getElementById("password").value);
-    // Ensure quality of passwords. Haaaaaaaa 1aaaaaaaa 1Haaaaaaa
-    if ((/[A-Z]/.test(document.getElementById("password").value) && /[0-9]/.test(document.getElementById("password").value) && (document.getElementById("password").value.length > 8)) === false) {
+
+    // Ensure quality of passwords. Haaaaaaa 1aaaaaaa 1Haaaaaa
+    if (((/[A-Z]/.test(document.getElementById("password").value) === false) || (/[0-9]/.test(document.getElementById("password").value) === false) || ((document.getElementById("password").value.length > 7) === false))) {
       document.getElementById("password").setCustomValidity("Passwords must contain a minimum of: eight characters, one digit and one capital letter.");
-      document.getElementById("password").reportValidity();      
+      document.getElementById("password").reportValidity();     
     // Ensure passwords match.
     } else if (document.getElementById("password_confirm").value !== document.getElementById("password").value) {
       document.getElementById("password_confirm").setCustomValidity("Please ensure your passwords match.");
@@ -31,6 +31,9 @@ $(document).ready(function() {
     } else {
       document.getElementById("registrationForm").submit();
     }
+    // setTimeout(3000);
+    // document.getElementById("password").setCustomValidity("");
+    // document.getElementById("password_confirm").setCustomValidity("");
   });
 });
 
