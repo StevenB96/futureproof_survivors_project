@@ -21,17 +21,17 @@
             <label for="email">Email address:</label>
             <input type="email" class="form-control" id="email" name="email" required>
         </div>
-        <div class="form-group" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 5; grid-row-end: 6;">
+        <div class="form-group" style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 5; grid-row-end: 6;">
             <label for="pwd">Password:</label>
             <input type="password" class="form-control" id="password" name="password" oninput="setCustomValidity('')" required>
         </div>
-        <div class="form-group" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 5; grid-row-end: 6;">
+        <div class="form-group" style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 7; grid-row-end: 8;">
             <label for="pwd">Re-type password:</label>
             <input type="password" class="form-control" id="password_confirm" name="password_confirm" oninput="setCustomValidity('')" required>
         </div>
-        <div class="checkbox" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 6; grid-row-end: 7; text-align: center;">
+        <div class="checkbox" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 8; grid-row-end: 9; text-align: center;">
             <label>Remember me <input type="checkbox" name="remember_me"></label required>
         </div>
-        <button type="submit" id="registerSubmit" class="btn btn-secondary indexText" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 6; grid-row-end: 7;">Submit</button>
+        <button type="submit" id="registerSubmit" class="btn btn-secondary indexText" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 8; grid-row-end: 9;">Submit</button>
     </form>
 @endsection
