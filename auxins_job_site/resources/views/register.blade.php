@@ -7,7 +7,7 @@
 @section('form')
     <form class="topLayer bg-light indexText text-dark" id="registrationForm" action="http://127.0.0.1:8000/user/create" method="post"> {{ csrf_field() }}
         <div style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2; text-align: center;">
-            <strong class="navStrong indexText">Register</strong><a class="nav-link" href="http://127.0.0.1:8000/login">Already have an account? Click here to login.</a>
+            <strong class="navStrong indexText">Register</strong><a class="nav-link" href="http://127.0.0.1:8000/log_in">Already have an account? Click here to login.</a>
         </div>
         <div class="form-group" style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3;">
             <label for="forename">Forename:</label>

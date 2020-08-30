@@ -1,14 +1,14 @@
 function anchorGuest (event) {
   event.preventDefault();
   event.stopPropagation();
-  if (window.confirm('You must be logged in to access this page, clicking OK will redirect you to the log in page.')) {window.location.href='http://127.0.0.1:8000/login';
+  if (window.confirm('You must be logged in to access this page, clicking OK will redirect you to the log in page.')) {window.location.href='http://127.0.0.1:8000/log_in';
   }
 }
 
 function privatePage () {
   if (/about/i.test(window.location.href) === false) {
     alert('You must be logged in to access this page, you will be redirected to the log in page.');
-    window.location.href='http://127.0.0.1:8000/login';
+    window.location.href='http://127.0.0.1:8000/log_in';
   }
 }
 
