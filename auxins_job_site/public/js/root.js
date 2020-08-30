@@ -1,3 +1,20 @@
+function anchorGuest (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  if (window.confirm('You must be logged in to use this feature, clicking OK will take you to the registration page.')) {window.location.href='http://127.0.0.1:8000/register';
+  }
+}
+
+function privatePage () {
+  alert('You must be logged in to access this page, you will be redirected to the registration page.');
+  window.location.href='http://127.0.0.1:8000/register';
+}
+
+function publicPage () {
+  alert('You must be logged out to access this page, you will be redirected to the about page.');
+  window.location.href='http://127.0.0.1:8000/about';
+}
+
 $(document).ready(function() {
   // Root Stuff
   // Set the root footer height equal to the root header.

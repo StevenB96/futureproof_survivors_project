@@ -17,6 +17,7 @@ class User_controller extends Controller {
         $user->save();
         return redirect('http://127.0.0.1:8000/login');
     }
+
     function login_user (Request $request) {
         $credentials = array (
         'email' => $request->email,
@@ -27,5 +28,10 @@ class User_controller extends Controller {
         } else {
             return request()->all();
         }
+    }
+
+    function logout_user (Request $request) {
+        Auth::logout();
+        return redirect('http://127.0.0.1:8000/login');
     }
 }

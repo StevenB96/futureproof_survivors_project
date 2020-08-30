@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\User;
+// use Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,12 @@ use App\User;
 |
 */
 Route::get('/', function () {
-    return view('login');
+    return view('about');
 });
 
+// Route::get('/auth/login', function () {
+//     return view('login');
+// });
 
 Route::get('/register', function () {
     return view('register');
@@ -40,3 +44,5 @@ Route::get('/job_coaching', function () {
 Route::post('/user/create', 'User_controller@create_user');
 
 Route::get('/user/login', 'User_controller@login_user');
+
+Route::get('/user/logout', 'User_controller@logout_user');

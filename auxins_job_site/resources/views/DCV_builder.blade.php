@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    @guest <script>privatePage()</script> @endguest
     <nav class="navbar navbar-light bg-light primmaryNav text-dark">
         <a href="http://127.0.0.1:8000/about" class="btn bg-light navA">About</a>
 
@@ -20,7 +21,7 @@
                 <a class="dropdown-item bg-light navButton" href="#">Account</a>
                 <a class="dropdown-item bg-light navButton" href="#">Terms & Conditions</a>
                 <a class="dropdown-item bg-light navButton" href="#">Developers</a>
-                <a class="dropdown-item bg-light navButton" href="#">Logout</a>
+                <a class="dropdown-item bg-light navButton" href="http://127.0.0.1:8000/user/logout">Logout</a>
             </div>
         </div>
     </nav>

@@ -5,6 +5,7 @@
 @endsection
 
 @section('form')
+    @auth <script>publicPage()</script> @endauth
     <form class="topLayer bg-light indexText text-dark" id="loginForm" action="http://127.0.0.1:8000/user/login" method="get"> {{ csrf_field() }}
         <div style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2; text-align: center;">
             <strong class="navStrong indexText">Login</strong><a class="nav-link" href="http://127.0.0.1:8000/register">Don't have an account? Click here to register.</a>
