@@ -38,13 +38,6 @@ Route::get('/job_coaching', function () {
     return view('job_coaching');
 });
 
-Route::post('/user/store', function () {
-    $user = new User();
-    $user->forename = request('forename');
-    $user->surname = request('surname');
-    $user->email = request('email');
-    $user->password = request('password');
-    $user->save();
+Route::post('/user/create', 'User_controller@create_user');
 
-    return request()->all();
-});
+Route::get('/user/login', 'User_controller@login_user');
