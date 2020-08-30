@@ -16,11 +16,11 @@ $(document).ready(function() {
     'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })
+
   // Display custom validity notices.
   $("#registrationForm").submit(function(event) {
     event.preventDefault();
-
-    // Ensure quality of passwords. Haaaaaaa 1aaaaaaa 1Haaaaaa
+    // Ensure quality of passwords.
     if (((/[A-Z]/.test(document.getElementById("password").value) === false) || (/[0-9]/.test(document.getElementById("password").value) === false) || ((document.getElementById("password").value.length > 7) === false))) {
       document.getElementById("password").setCustomValidity("Passwords must contain a minimum of: eight characters, one digit and one capital letter.");
       document.getElementById("password").reportValidity();     
@@ -31,9 +31,6 @@ $(document).ready(function() {
     } else {
       document.getElementById("registrationForm").submit();
     }
-    // setTimeout(3000);
-    // document.getElementById("password").setCustomValidity("");
-    // document.getElementById("password_confirm").setCustomValidity("");
   });
 });
 

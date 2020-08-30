@@ -5,7 +5,7 @@
 @endsection
 
 @section('form')
-    <form class="topLayer bg-light indexText text-dark" id="registrationForm" action="/action_page.php">
+    <form class="topLayer bg-light indexText text-dark" id="registrationForm" action="http://127.0.0.1:8000/user/store" method="post"> {{ csrf_field() }}
         <div style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2; text-align: center;">
             <strong class="navStrong indexText">Register</strong><a class="nav-link" href="http://127.0.0.1:8000/login">Already have an account? Click here to login.</a>
         </div>
