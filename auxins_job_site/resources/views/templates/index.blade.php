@@ -21,9 +21,9 @@
     </script>
     <script src="js\index.js"
     type='application/javascript'>
-    </script><!--Custom JavaScript-->
+    </script>
+    @auth <script>publicPage()</script> @endauth<!--Custom JavaScript-->
 </head>
-
 <body class="rootBody">
     <header id="rootHeader">
         <img class="rootImg" src='png\banner.png'>

@@ -5,7 +5,6 @@
 @endsection
 
 @section('content')
-    @guest <script>privatePage()</script> @endguest
     <nav class="navbar navbar-light bg-light primmaryNav text-dark">
         <a href="http://127.0.0.1:8000/about" class="btn bg-light navA">About</a>
 

@@ -1,3 +1,8 @@
+function publicPage () {
+  alert('You must be logged out to access this page, you will be redirected to the about page.');
+  window.location.href='http://127.0.0.1:8000/about';
+}
+
 $(document).ready(function() {
   //Index Stuff
   originalHeight = $(document).height()

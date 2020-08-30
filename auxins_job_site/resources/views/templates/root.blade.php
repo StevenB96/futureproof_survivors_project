@@ -17,7 +17,8 @@
     </script><!--JavasScript frameworks{{ asset('bootstrap-3.4.1-dist\js\bootstrap.min.js') }}-->
     <script src="js\root.js"
     type='application/javascript'>
-    </script><!--Custom JavaScript-->
+    </script>
+    @guest <script>privatePage()</script> @endguest<!--Custom JavaScript-->
 </head>
 
 <body class="rootBody">
