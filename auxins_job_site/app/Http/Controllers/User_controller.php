@@ -29,12 +29,3 @@ class User_controller extends Controller {
         }
     }
 }
-// Steven
-// Berrisford
-// stevenberrisford@gmail.com
-// Qwerty12
-
-// Jamie
-// Berrisford
-// jamieberrisford@gmail.com
-// Asdfgh12
