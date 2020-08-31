@@ -6,7 +6,7 @@ function anchorGuest (event) {
 }
 
 function privatePage () {
-  if (/about/i.test(window.location.href) === false) {
+  if (/dcv_builder/i.test(window.location.href) === true || /job_coaching/i.test(window.location.href) === true) {
     alert('You must be logged in to access this page, you will be redirected to the log in page.');
     window.location.href='http://127.0.0.1:8000/log_in';
   }
