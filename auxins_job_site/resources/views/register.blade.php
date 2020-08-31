@@ -29,9 +29,6 @@
             <label for="password_confirm" class="fontMinimumSpace">Re-type password:</label>
             <input type="password" class="form-control" id="password_confirm" name="password_confirm" oninput="setCustomValidity('')" required>
         </div>
-        <div class="checkbox" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 8; grid-row-end: 9; text-align: center;">
-            <label class="fontMinimumSpace">Remember me <input class="fontMinimumSpace" type="checkbox" name="remember_me"></label required>
-        </div>
-        <button type="submit" id="registerSubmit" class="btn btn-secondary fontMedium fontMinimumSpace" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 8; grid-row-end: 9;">Register</button>
+        <button type="submit" id="registerSubmit" class="btn btn-secondary fontMedium fontMinimumSpace" style="grid-column-start: 1; grid-column-end: 3; grid-row-start: 8; grid-row-end: 9;">Register</button>
     </form>
 @endsection

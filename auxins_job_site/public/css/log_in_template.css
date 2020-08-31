@@ -5,7 +5,7 @@ header, main, footer {
   pointer-events: none;
 }
 /* Form On Focus */
-.has-error .form-control:focus {
+.has-error, .form-control:focus {
   border-color: rgb(41, 43, 44); 
   box-shadow: none; 
   -webkit-box-shadow: none;

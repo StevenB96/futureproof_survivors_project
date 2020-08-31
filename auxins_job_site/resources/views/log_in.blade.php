@@ -17,7 +17,7 @@
             <label for="password" class="fontMinimumSpace">Password:</label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
-        <div class="checkbox" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 4; grid-row-end: 5; text-align: center;">
+        <div class="checkbox center" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 4; grid-row-end: 5; text-align: center;">
             <label class="fontMinimumSpace">Remember me <input class="fontMinimumSpace" type="checkbox" name="remember_me"></label required>
         </div>
         <button type="submit" class="btn btn-secondary fontMedium fontMinimumSpace" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5;">Log In</button>

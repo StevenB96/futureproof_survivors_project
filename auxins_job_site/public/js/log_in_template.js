@@ -27,10 +27,13 @@ $(document).ready(function() {
   $("#registrationForm > div > input, #loginForm > div > input").css({
     'height': (originalWidth/22.32 + 'px')
   })
-  $("input[type='checkbox']").css({
+  $("input[type='checkbox'], input[type='submit'").css({
     'width': (originalWidth/59.52 + 'px'),
     'height': (originalWidth/59.52 + 'px')
   })
+  $("button[type='submit']").css({
+    'height': (originalWidth/22.32 + 'px')
+  });
   // Display custom validity notices.
   $("#registrationForm").submit(function(event) {
     event.preventDefault();
@@ -75,5 +78,8 @@ $(window).on('resize', function(){
   $("input[type='checkbox']").css({
     'width': (updatedWidth/59.52 + 'px'),
     'height': (updatedWidth/59.52 + 'px')
+  });
+  $("button[type='submit']").css({
+    'height': (updatedWidth/22.32 + 'px')
   });
 });
