@@ -25,10 +25,10 @@
     @auth <script>publicPage()</script> @endauth<!--Custom JavaScript-->
 </head>
 <body id="rootBody">
-    <header id="rootHeader"class="center">
+    <header id="baseTemplateHeader"class="center">
         <img class="imageFill" src='png\banner.png'>
     </header>
-    <main id="rootMain">        
+    <main id="baseTemplateMain">        
         <nav class="navbar navbar-light bg-light primmaryNav text-dark">
             <p class="fontLarge fontBold fontFill center">About</p>
 
@@ -50,11 +50,11 @@
         </nav>
         <article id="logInTemplateMain">
     </main>
-    <footer id="rootFooter" class="center">
-        <div id="rootFooterLogo" class="center">
+    <footer id="baseTemplateFooter" class="center">
+        <div id="baseTemplateFooterLogo" class="center">
             <img class="imageFill" src='png\auxins.png'>
         </div>
-        <div id ="rootFooterBusinessEnquiries" class="center">
+        <div id ="baseTemplateFooterBusinessEnquiries" class="center">
             <p class="fontSmall fontMinimumSpace">Contact information:</p>
             <?php
                 $contactDetails = array(
@@ -72,7 +72,7 @@
                 endforeach; ?>
             </table>
         </div>
-        <div id="rootFooterOpeningHours" class="center">
+        <div id="baseTemplateFooterOpeningHours" class="center">
             <?php        
                 // REQUIRED
                 // Set your default time zone (listed here: http://php.net/manual/en/timezones.php)

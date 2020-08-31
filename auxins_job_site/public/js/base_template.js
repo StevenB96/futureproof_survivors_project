@@ -14,10 +14,10 @@ function privatePage () {
 
 $(document).ready(function() {
   originalHeight = $(document).height();
-  originalWidth = $("#rootHeader").width();
+  originalWidth = $("#baseTemplateHeader").width();
   /* ---Base Template Stuff--- */
   // Set Base Template's final grid row height equal to the Base Template Header.
-  $("#rootFooter").css({
+  $("#baseTemplateFooter").css({
     'height': (originalWidth/4 + 'px')
   });
   // Set Base Template's final grid row height equal to the Base Template Header.
@@ -56,10 +56,10 @@ $(document).ready(function() {
 
 $(window).on('resize', function(){
   updatedHeight = $(document).height()
-  updatedWidth = $("#rootHeader").width()
+  updatedWidth = $("#baseTemplateHeader").width()
   /* ---Base Template Stuff--- */
   // Set Base Template's final grid row height equal to the Base Template Header.
-  $("#rootFooter").css({
+  $("#baseTemplateFooter").css({
     'height': (updatedWidth/4 + 'px')
   });
   // Set Base Template's final grid row height equal to the Base Template Header.

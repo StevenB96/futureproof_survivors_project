@@ -5,7 +5,7 @@ function publicPage () {
 
 $(document).ready(function() {
   originalHeight = $(document).height()
-  originalWidth = $("#rootHeader").width()
+  originalWidth = $("#baseTemplateHeader").width()
   /* Log In Template Stuff */
   // Scale all main elements based off the index template to give the page the same ratio as an A4 piece of paper.
   $("#logInTemplateMain").css({
@@ -16,7 +16,7 @@ $(document).ready(function() {
   // Specify registration form position and width.
   $("#registrationForm").css({
     'left': (($(window).width()/2-originalWidth*0.31) + 'px'),
-    'width': ($("#rootHeader").width()*0.62 + 'px')
+    'width': ($("#baseTemplateHeader").width()*0.62 + 'px')
   })
   // Specify login form position and width.
   $("#loginForm").css({
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 $(window).on('resize', function(){
   updatedHeight = $(document).height()
-  updatedWidth = $("#rootHeader").width()
+  updatedWidth = $("#baseTemplateHeader").width()
   /* Log In Template Stuff */
   // Scale all main elements based off the index template to give the page the same ratio as an A4 piece of paper.
   $("#logInTemplateMain").css({
