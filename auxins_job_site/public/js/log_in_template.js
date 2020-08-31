@@ -4,24 +4,33 @@ function publicPage () {
 }
 
 $(document).ready(function() {
-  //Index Stuff
   originalHeight = $(document).height()
   originalWidth = $("#rootHeader").width()
+  /* Log In Template Stuff */
   // Scale all main elements based off the index template to give the page the same ratio as an A4 piece of paper.
-  $(".indexMain").css({
-    'height': (((Math.sqrt(2)*originalWidth)-originalHeight) + 'px')
+  $("#logInTemplateMain").css({
+    'height': (((Math.sqrt(2)*originalWidth)-originalHeight*(originalWidth/originalHeight)) + 'px')
   });
+
+  /* Register and Log In Stuff */
   // Specify registration form position and width.
   $("#registrationForm").css({
-    'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
+    'left': (($(window).width()/2-originalWidth*0.31) + 'px'),
     'width': ($("#rootHeader").width()*0.62 + 'px')
   })
   // Specify login form position and width.
   $("#loginForm").css({
-    'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
-    'width': ($("#rootHeader").width()*0.62 + 'px')
+    'left': (($(window).width()/2-originalWidth*0.31) + 'px'),
+    'width': (originalWidth*0.62 + 'px')
   })
-
+  // Input height.
+  $("#registrationForm > div > input, #loginForm > div > input").css({
+    'height': (originalWidth/22.32 + 'px')
+  })
+  $("input[type='checkbox']").css({
+    'width': (originalWidth/59.52 + 'px'),
+    'height': (originalWidth/59.52 + 'px')
+  })
   // Display custom validity notices.
   $("#registrationForm").submit(function(event) {
     event.preventDefault();
@@ -40,19 +49,31 @@ $(document).ready(function() {
 });
 
 $(window).on('resize', function(){
-  //Index Stuff
+  updatedHeight = $(document).height()
+  updatedWidth = $("#rootHeader").width()
+  /* Log In Template Stuff */
   // Scale all main elements based off the index template to give the page the same ratio as an A4 piece of paper.
-  $(".indexMain").css({
-    'height': (((Math.sqrt(2)*$("#rootHeader").width())-originalHeight*($("#rootHeader").width()/originalWidth)) + 'px')
+  $("#logInTemplateMain").css({
+    'height': (((Math.sqrt(2)*updatedWidth)-updatedHeight*(updatedWidth/updatedHeight)) + 'px')
   });
+
+  /* Register and Log In Stuff */
   // Specify registration form position and width.
   $("#registrationForm").css({
-    'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
-    'width': ($("#rootHeader").width()*0.62 + 'px')
+    'left': (($(window).width()/2-updatedWidth*0.31) + 'px'),
+    'width': (updatedWidth*0.62 + 'px')
   })
   // Specify login form position and width.
   $("#loginForm").css({
-    'left': (($(window).width()/2-$("#rootHeader").width()*0.31) + 'px'),
-    'width': ($("#rootHeader").width()*0.62 + 'px')
+    'left': (($(window).width()/2-updatedWidth*0.31) + 'px'),
+    'width': (updatedWidth*0.62 + 'px')
   })
+  // Input height.
+  $("#registrationForm > div > input, #loginForm > div > input").css({
+    'height': (updatedWidth/22.32 + 'px')
+  })
+  $("input[type='checkbox']").css({
+    'width': (updatedWidth/59.52 + 'px'),
+    'height': (updatedWidth/59.52 + 'px')
+  });
 });

@@ -6,8 +6,7 @@
     <title>@yield('title')</title>
     <link href='#' rel='stylesheet' type = '#'><!--Fonts-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel='stylesheet' type='text/css'><!--CSS frameworks{{ asset('bootstrap-3.4.1-dist\css\bootstrap.min.css') }}-->
-    <link href = "{{ asset('css\index.css') }}" rel = 'stylesheet' type = 'text/css'/>
-    <link href = "{{ asset('css\root.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
+    <link href = "{{ asset('css\base_template.css') }}" rel = 'stylesheet' type = 'text/css'/><!--Custom CSS-->
     <script
     src="{{ asset('jquery-3.5.1.min.js') }}"
     type='application/javascript'>
@@ -16,47 +15,25 @@
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     type='application/javascript'>
     </script><!--JavasScript frameworks{{ asset('bootstrap-3.4.1-dist\js\bootstrap.min.js') }}-->
-    <script src="js\root.js"
+    <script src="js\base_template.js"
     type='application/javascript'>
     </script>
-    <script src="js\index.js"
-    type='application/javascript'>
-    </script>
-    @auth <script>publicPage()</script> @endauth<!--Custom JavaScript-->
+    @guest <script>privatePage()</script> @endguest<!--Custom JavaScript-->
 </head>
-<body class="rootBody">
-    <header id="rootHeader">
-        <img class="rootImg" src='png\banner.png'>
+
+<body id="rootBody">
+    <header id="rootHeader" class="center">
+        <img class="imageFill" src='png\banner.png'>
     </header>
-    <main id="rootMain">
-        <nav class="navbar navbar-light bg-light primmaryNav">
-            <strong class="pageStrong"><u>About</u></strong>
-
-            <a href="http://127.0.0.1:8000/about" class="btn bg-light pageA pageButton">Digital CV Builder</a>
-
-            <a href="http://127.0.0.1:8000/dcv_builder" class="btn bg-light pageA pageButton">Job Coaching</a>
-
-            <div class="btn-group">
-                <button type="button" class="btn bg-light dropdown-toggle pageButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-light pageButton" href="#">Account</a>
-                    <a class="dropdown-item bg-light pageButton" href="#">Terms & Conditions</a>
-                    <a class="dropdown-item bg-light pageButton" href="#">Developers</a>
-                    <a class="dropdown-item bg-light pageButton" href="#">Logout</a>
-                </div>
-            </div>
-    </nav>
-    <main class="indexMain">
+    <main id="rootMain" class="imageFill">
+        @yield('content')
     </main>
-    </main>
-    <footer id="rootFooter">
-        <div id="rootFooterLogo">
-            <img class="rootImg" src='png\auxins.png'>
+    <footer id="rootFooter" class="center">
+        <div id="rootFooterLogo" class="center">
+            <img class="imageFill" src='png\auxins.png'>
         </div>
-        <div id ="rootFooterBusinessEnquiries">
-            <p class="rootP">Contact information:</p>
+        <div id ="rootFooterBusinessEnquiries" class="center">
+            <p class="fontSmall fontMinimumSpace">Contact information:</p>
             <?php
                 $contactDetails = array(
                     "Email address" => "fakeemail@fakemail.com",
@@ -64,16 +41,16 @@
                     "Mail address" => "61 Fox Road,<br>Framingham Pigot,<br>NORWICH,<br>NR14 7PZ"
                 );
             ?>
-            <table>
+            <table class="fontSmall">
                 <?php foreach ($contactDetails as $detail => $value):
                     echo '<tr>';
                     echo '<td style="text-align: right">' . $detail . '</td>';
-                    echo '<td>' . $value . '</td>';
+                    echo '<td style="text-align: left">' . $value . '</td>';
                     echo '</tr>';
                 endforeach; ?>
             </table>
         </div>
-        <div id="rootFooterOpeningHours">
+        <div id="rootFooterOpeningHours" class="center">
             <?php        
                 // REQUIRED
                 // Set your default time zone (listed here: http://php.net/manual/en/timezones.php)
@@ -117,24 +94,24 @@
                 
                 // Display open / closed message
                 if($store_hours->is_open()) {
-                    echo '<p class="rootP" style="color: green;">We are open!</p><p class="rootP">Normal office hours:</p>';
+                    echo '<p class="fontSmall fontMinimumSpace" style="color: green;">We are open!</p><p class="fontSmall fontMinimumSpace">Normal office hours:</p>';
                 } else {
-                    echo '<p class="rootP" style="color: red;">We are closed.</p><p class="rootP">Normal office hours:</p>';
+                    echo '<p class="fontSmall fontMinimumSpace" style="color: red;">We are closed.</p><p class="fontSmall fontMinimumSpace">Normal office hours:</p>';
                 }
 
                 // Display full list of open hours (for a week without exceptions)
-                echo '<table>';
+                echo '<table class="fontSmall">';
                 foreach ($store_hours->hours_this_week() as $days => $hours) {
                     echo '<tr>';
                     echo '<td style="text-align: right">' . $days . '</td>';
-                    echo '<td>' . $hours . '</td>';
+                    echo '<td style="text-align: left">' . $hours . '</td>';
                     echo '</tr>';
                 }
                 echo '</table>';
             ?>
         </div>
     </footer>
-    @yield('form')
+    @yield('registrationForm')
 </body>
 
 </html>

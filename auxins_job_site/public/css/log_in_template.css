@@ -1,0 +1,38 @@
+/* Log In Template Stuff */
+/* Header, Main and Footer */
+header, main, footer {
+  filter: blur(3px);
+  pointer-events: none;
+}
+/* Form On Focus */
+.has-error .form-control:focus {
+  border-color: rgb(41, 43, 44); 
+  box-shadow: none; 
+  -webkit-box-shadow: none;
+}
+
+/* Register and Log In Stuff */
+/* Registration Form */
+#registrationForm {
+  grid-template-columns: auto  auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  padding: 10px;
+
+}
+/* Login Form */
+#loginForm {
+  grid-template-columns: auto  auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 10px;
+
+}
+/* Login Form */
+.logInForm {
+  border: solid rgb(41, 43, 44)  3px;
+  border-radius: 3px;
+  position: fixed;
+  display: grid;
+  grid-column-gap: 10px;
+  top: 20px;
+  z-index: 1;
+}

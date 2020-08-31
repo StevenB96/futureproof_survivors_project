@@ -1,0 +1,151 @@
+/* ---General Stuff--- */
+/* Large Font (18px@1024px_width) */
+.fontLarge {
+  font-size: 18px;
+  text-align: center;
+}
+/* Medium Font (16px@1024px_width) */
+.fontMedium {
+  font-size: 16px;
+  text-align: center;
+}
+/* Small Font (13px@1024px_width) */
+.fontSmall {
+  font-size: 13px;
+  text-align: center;
+}
+/* Font Weigtht Bold */
+.fontBold {
+  font-weight: bold;
+}
+/* Font Weigtht No Padding */
+.fontFill {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.fontMinimumSpace {
+  margin: 0px;
+  padding: 0px;
+}
+/* Border Bottom */
+.borderBottom {
+  border-bottom: solid rgb(41, 43, 44)  3px;
+}
+/* Font Border Center */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Table Cells */
+div table td, div table th {
+  margin: 0px;
+  padding: 0px 10px;
+  white-space: nowrap;
+  vertical-align: top;
+  font-weight: 1em;
+}
+/* Image Fill */
+.imageFill {
+  width: 100%;
+}
+.noOutline:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ---Base Template Stuff--- */
+/* Root Body */
+#rootBody {
+  margin: auto;
+  display: grid; 
+  width: 100%;
+  grid-template-columns: auto 62% auto;
+  grid-template-rows: auto auto auto;
+  box-sizing: content-box;
+}
+/* 768px Break Point */
+@media only screen and (max-width: 768px) {
+  #rootBody {
+    grid-template-columns: auto 100% auto;
+  }
+}
+/* Root Header */
+#rootHeader {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+  box-sizing: content-box;
+  background-image: url('../jpg/annie_spratt_paper.jpg');
+  background-size: cover;
+}
+/* Root Main */
+#rootMain {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 2; 
+  grid-row-end: 3; 
+  box-sizing: content-box;
+}
+/* Root Footer */
+#rootFooter {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 3; 
+  grid-row-end: 4;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-image: url('../jpg/annie_spratt_paper.jpg');
+  background-size: cover;
+  box-sizing: content-box;
+}
+/* Root Footer Logo */
+#rootFooterLogo {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+}
+/* Root Footer Business Enquiries */
+#rootFooterBusinessEnquiries {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+}
+/* Root Footer Opening Hours */
+#rootFooterOpeningHours {
+  grid-column-start: 3; 
+  grid-column-end: 4; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+}
+
+/* ---About, DCV Builder and Job Coaching Stuff--- */
+/* Primmary Nav */
+.primmaryNav {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+  padding: 0px;
+}
+/* Button Group */
+.btn-group {
+  height: 100%; 
+  margin: 0px;
+  padding: 0px;
+}
+/* Dropdown Menu Right */
+.dropdown-menu-right {
+  right: -1px;
+  padding: 0px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}

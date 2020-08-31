@@ -15,7 +15,7 @@ class User_controller extends Controller {
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->save();
-        return redirect('http://127.0.0.1:8000/login');
+        return redirect('http://127.0.0.1:8000/log_in');
     }
 
     function login_user (Request $request) {
@@ -32,6 +32,6 @@ class User_controller extends Controller {
 
     function logout_user (Request $request) {
         Auth::logout();
-        return redirect('http://127.0.0.1:8000/login');
+        return redirect('http://127.0.0.1:8000/log_in');
     }
 }
