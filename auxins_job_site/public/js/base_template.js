@@ -34,7 +34,7 @@ $(document).ready(function() {
   $(".fontSmall").css({
     'font-size': (originalWidth/68.677 + 'px')
   });
-  // Scale padding relative to the root header's width.
+  // Scale padding relative to the Base Template Header's width.
   $("div table td, div table th").css({
     'padding': ('0px ' + originalWidth/89.28 + 'px')
   });
@@ -44,9 +44,13 @@ $(document).ready(function() {
   $(".dropdown-menu-right > a").css({
       'min-width': ($(".btn-group").width() + 'px')
     });
-  // Scale the primmary navbar's height relative to the root header's height.
+  // Scale the primmary navbar's height relative to the Base Template Header's height.
   $(".primmaryNav").css({
     'height': (originalWidth/4*0.3844 + 'px')
+  });
+  // Scale the Border Bottom relative to the Base Template Header's width.
+  $(".borderBottom").css({
+    'border-bottom': ("solid rgb(41, 43, 44) " + originalWidth/297.6 + 'px')
   });
 });
 
@@ -81,8 +85,12 @@ $(window).on('resize', function(){
   $(".dropdown-menu-right > a").css({
     'min-width': ($(".btn-group").width() + 'px')
   });
-  // Scale the primmary navbar's height relative to the root header's height.
-  $(".primmaryNav").css({
-    'height': (updatedWidth/4*0.3844 + 'px')
+    // Scale the primmary navbar's height relative to the Base Template Header's height.
+    $(".primmaryNav").css({
+      'height': (updatedWidth/4*0.3844 + 'px')
+    });
+  // Scale the primmary navbar's height relative to the Base Template Header's width.
+  $(".borderBottom").css({
+    'border-bottom': ("solid rgb(41, 43, 44) " + updatedWidth/297.6 + 'px')
   });
 });
