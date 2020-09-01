@@ -1,8 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\User;
-// use Auth;
-
+use Illuminate\Support\facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +12,9 @@ use App\User;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Auth::routes(['verify' => true]);
+
 Route::get('/', function () {
     return view('about');
 });
@@ -46,3 +48,7 @@ Route::post('/user/create', 'User_controller@create_user');
 Route::get('/user/log_in', 'User_controller@log_in_user');
 
 Route::get('/user/log_out', 'User_controller@log_out_user')->middleware('auth');
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
