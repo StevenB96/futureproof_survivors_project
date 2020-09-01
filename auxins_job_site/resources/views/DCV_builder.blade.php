@@ -20,7 +20,7 @@
                 <a class="dropdown-item bg-light fontLarge center noOutline" href="#">Account</a>
                 <a class="dropdown-item bg-light fontLarge center noOutline" href="#">Terms & Conditions</a>
                 <a class="dropdown-item bg-light fontLarge center noOutline" href="#">Developers</a>
-                <a class="dropdown-item bg-light fontLarge center noOutline" href="http://127.0.0.1:8000/user/logout">Log Out</a>
+                <a class="dropdown-item bg-light fontLarge center noOutline" href="http://127.0.0.1:8000/user/log_out">Log Out</a>
             </div>
         </div>
     </nav>

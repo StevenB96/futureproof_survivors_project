@@ -43,6 +43,6 @@ Route::get('/job_coaching', function () {
 
 Route::post('/user/create', 'User_controller@create_user');
 
-Route::get('/user/login', 'User_controller@login_user');
+Route::get('/user/log_in', 'User_controller@log_in_user');
 
-Route::get('/user/logout', 'User_controller@logout_user');
+Route::get('/user/log_out', 'User_controller@log_out_user')->middleware('auth');
