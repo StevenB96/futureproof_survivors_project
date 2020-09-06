@@ -13,15 +13,9 @@ use Illuminate\Support\facades\Auth;
 |
 */
 
-// Auth::routes(['verify' => true]);
-
 Route::get('/', function () {
     return view('about');
 });
-
-// Route::get('/auth/login', function () {
-//     return view('login');
-// });
 
 Route::get('/register', function () {
     return view('register');
@@ -47,8 +41,4 @@ Route::post('/user/create', 'User_controller@create_user');
 
 Route::get('/user/log_in', 'User_controller@log_in_user');
 
-Route::get('/user/log_out', 'User_controller@log_out_user')->middleware('auth');
-
-// Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user/log_out', 'User_controller@log_out_user');
